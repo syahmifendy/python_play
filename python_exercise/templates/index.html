@@ -1,0 +1,26 @@
+<html>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript">
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         console.log("in it");
+        //         $.ajax({
+        //             url:"/test",
+        //             type:"POST",
+        //             contentType: "application/json",
+        //             data: document.getElementById("v1").value
+        //         });
+        //     });
+        // });
+        function myfunc(x) {
+            $.ajax({
+                url:"/test",
+                type:"POST",
+                contentType: "application/json",
+                data: document.getElementById("v"+x).value});
+        }
+    </script> 
+    <body>
+        {{tbl|safe}}
+    </body>
+    
+</html>
